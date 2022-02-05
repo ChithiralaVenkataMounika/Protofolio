@@ -1,4 +1,181 @@
-﻿img
-{
-    width:300px;
+﻿/*Color Palette
+-----------------
+https://coolors.co/704e2e-fffded-06324B-6daedb-468189
+#704E2E - Brown
+#FFFDED - Biscuit
+#A7CCED - light Blue
+#DE89BE - Purple
+#468189 - Sea weed color
+#343434 - dark Grey
+#F7FFF7 - almost white
+*/
+
+/*Global Styles
+------------------*/
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+a {
+    color: #FFFDED;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+.content-wrap{
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.divider > section {
+    border-bottom: 1px dashed #343434;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+h1{
+    font-size: 80px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h2{
+    margin: 0;
+}
+h3{
+    margin-bottom: 2px;
+}
+h3 + p{
+font-style:italic;
+}
+h3 ~ p{
+    margin: 2px;
+}
+/*Profile
+------------------*/
+header {
+    background-color: #06324B;
+    color: #F7FFF7;
+    
+}
+
+li {
+    text-align: justify;
+}
+
+.justify{
+    text-align: justify;
+}
+/*Skills
+------------------*/
+.skills {
+    background-color: #FFFDED;
+}
+.skills a {
+    color: #06324B;
+    text-decoration: underline;
+}
+.skills a:hover {
+    text-decoration: none;
+}
+table, th, td {
+    border: 1px solid #343434;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+}
+tr:nth-child(even) {
+    background-color: rgb(52, 52, 52, 0.1);
+}
+td:nth-child(odd) {
+    font-weight: bold;
+}
+/*Work Experience
+------------------*/
+.experience {
+    background-color: #A7CCED;
+}
+.content-wrap > p:first-of-type{
+    margin: 0px;
+}
+
+/*Education
+------------------*/
+.education {
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    
+}
+.education p{
+    width: 60%;
+}
+
+
+/*Contact Info
+------------------*/
+footer {
+    background-color: #704E2E;
+    color: #F7FFF7;
+  
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+   
+}
+.contact-list a{
+    padding: 15px;
+    display: inline;
+}
+
+
+/*Responsive Design
+------------------*/
+@media screen and (min-width: 750px){
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    footer, header {
+        text-align: center;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    .education {
+        background-size: cover;
+        background-position: top right;
+    }
+}
+@media screen and (max-width:749px){
+    h1{
+        font-size:75px;
+        line-height: 0.9;
+    }
+    h2{
+        line-height: 1;
+    }
 }
